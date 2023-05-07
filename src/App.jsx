@@ -17,24 +17,21 @@ function App() {
   };
 
   return (
-    <AuthProvider>
+   
       <div className="h-screen">
         <BrowserRouter>
-          <header>
-            <h1 className="text-2xl font-bold text-center mb-8">My App</h1>
-            <Header />
-          </header>
+   
           <Routes>
-            <Route className='h-screen' path="/" element={<Home />} />
-            <Route path="/login" element={<FirebaseAuth />} />
+            <Route className='h-screen' path="/" element={<MyCanvas/>} />
           
-            <Route path="/signup" element ={<SignUp />} />
-            <Route path="/canvas" element ={<MyCanvas/>} />
+          
+          
+           
            
           </Routes>
         </BrowserRouter>
       </div>
-    </AuthProvider>
+   
   );
 }
 
